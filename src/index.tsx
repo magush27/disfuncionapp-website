@@ -28,7 +28,7 @@ export default function LandingPage() {
               Finalmente, una aplicación que te ayuda a perder el tiempo de un modo efectivo nunca antes visto.
             </p>
             <a
-              href="/app.apk"
+              href="/assets/DisfuncionApp.apk"
               download
               className="inline-flex items-center px-6 py-3 bg-[#39FF14] text-black rounded-full font-semibold hover:bg-opacity-90"
             >
