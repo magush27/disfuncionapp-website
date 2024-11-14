@@ -5,6 +5,8 @@ import TimerIcon from "./assets/timer_disfunction_img.png";
 import NoteIcon from "./assets/note_disfunction_img.png";
 import DownloadIcon from "./assets/download_icon.svg";
 import AppPreview from "./assets/app_preview_img.png";
+import InstruccionesMobil from "./assets/instrucciones-mobil.png";
+import InstruccionesDeskop from "./assets/intrucciones-desktop.png";
 import ReactDOM from 'react-dom/client';
 import '@fontsource/poppins';
 import './index.css';
@@ -28,7 +30,7 @@ export default function LandingPage() {
               Finalmente, una aplicación que te ayuda a perder el tiempo de un modo efectivo nunca antes visto.
             </p>
             <a
-              href="/assets/DisfuncionApp.apk"
+              href="https://github.com/magush27/DisfunctionApp/releases/download/v1.0.2/DisfuncionApp.apk"
               download
               className="inline-flex items-center px-6 py-3 bg-[#39FF14] text-black rounded-full font-semibold hover:bg-opacity-90"
             >
@@ -45,7 +47,12 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section id="features" className="py-20">
+        <section id="how-to-install" className="">
+            <img src={InstruccionesDeskop} alt="APK Installation Instructions for Desktop" className="hidden lg:block" />
+            <img src={InstruccionesMobil} alt="APK Installation Instructions for Mobile" className="block lg:hidden" />
+          </section>
+
+        <section id="features" className="py-20 relative">
           <h2 className="text-4xl font-bold text-center mb-16">
             Funcionalidades
           </h2>
@@ -139,7 +146,7 @@ export default function LandingPage() {
             Únete a millones de personas improductivas y desorganizadas hoy
           </p>
           <a
-            href="/app.apk"
+            href="https://github.com/magush27/DisfunctionApp/releases/download/v1.0.2/DisfuncionApp.apk"
             download
             className="inline-flex items-center px-8 py-4 bg-[#39FF14] text-black rounded-full font-semibold text-lg hover:bg-opacity-90"
           >
@@ -150,7 +157,9 @@ export default function LandingPage() {
       </main>
 
       <footer className="w-full px-4 py-6 border-t border-zinc-800">
+    
         <div className="container mx-auto text-center">
+        <a className="underline github-link" href="https://github.com/magush27/DisfunctionApp">GitHub</a>
           <p>&copy; 2024 DisfuncionApp. Agus Las Peñas.</p>
         </div>
       </footer>

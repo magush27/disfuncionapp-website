@@ -26,8 +26,8 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href="#download" className="hover:text-[#39FF14]">
-              Descargar
+            <a href="#how-to-install" className="hover:text-[#39FF14]">
+              ¿Cómo instalar?
             </a>
           </li>
         </ul>
@@ -54,8 +54,8 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a href="#download" className="hover:text-[#39FF14]" onClick={() => setMobileMenuOpen(false)}>
-                Descargar
+              <a href="#how-to-install" className="hover:text-[#39FF14]" onClick={() => setMobileMenuOpen(false)}>
+                ¿Cómo instalar?
               </a>
             </li>
           </ul>

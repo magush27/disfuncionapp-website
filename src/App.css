@@ -7,6 +7,24 @@
   pointer-events: none;
 }
 
+.desktop-image, .mobile-image {
+  display: none;
+}
+
+/* Show the desktop image only on larger screens */
+@media (min-width: 768px) {
+  .desktop-image {
+    display: block;
+  }
+}
+
+/* Show the mobile image only on smaller screens */
+@media (max-width: 767px) {
+  .mobile-image {
+    display: block;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
